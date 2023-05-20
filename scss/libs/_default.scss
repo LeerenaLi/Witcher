@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(181.78deg, rgba(0, 0, 0, 0) 49.38%, rgba(0, 0, 0, 0.42) 98.49%),
+        url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    font-feature-settings: 'pnum' on, 'lnum' on; // для прыгающих цифрах в шрифте
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+button:focus {
+    outline: none;
+}  
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+h1, h2, h3, p, figure {
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 30px;
+    margin: 0 auto;
+    @include tablet {
+        padding: 0 39px;
+    }
+    @include mobile {
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
